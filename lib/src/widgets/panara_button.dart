@@ -29,12 +29,13 @@ class PanaraButton extends StatelessWidget {
         onTap: onTap,
         borderRadius: BorderRadius.circular(10),
         child: Container(
-          height: 50,
+          height: 30,
           decoration: BoxDecoration(
             border: isOutlined ? Border.all(color: bgColor) : null,
             borderRadius: BorderRadius.circular(10),
             color: Colors.transparent,
           ),
+          padding: EdgeInsets.symmetric(horizontal: 16),
           alignment: Alignment.center,
           child: Text(
             text,
@@ -42,7 +43,7 @@ class PanaraButton extends StatelessWidget {
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
             style: TextStyle(
-              fontSize: 18,
+              fontSize: 14,
               fontWeight: FontWeight.w600,
               color: isOutlined ? bgColor : buttonTextColor,
             ),

@@ -62,8 +62,8 @@ class PanaraInfoDialogWidget extends StatelessWidget {
                 Image.asset(
                   imagePath ?? 'assets/info.png',
                   package: imagePath != null ? null : 'panara_dialogs',
-                  width: 84,
-                  height: 84,
+                  width: 40,
+                  height: 40,
                   color: imagePath != null
                       ? null
                       : (panaraDialogType == PanaraDialogType.normal
@@ -84,7 +84,7 @@ class PanaraInfoDialogWidget extends StatelessWidget {
                 Text(
                   title ?? "",
                   style: TextStyle(
-                    fontSize: 24,
+                    fontSize: 16,
                     height: 1.2,
                     fontWeight: FontWeight.w600,
                     color: textColor,
@@ -100,7 +100,7 @@ class PanaraInfoDialogWidget extends StatelessWidget {
                 style: TextStyle(
                   color: textColor,
                   height: 1.5,
-                  fontSize: 18,
+                  fontSize: 14,
                   fontWeight: FontWeight.w400,
                 ),
                 textAlign: TextAlign.center,
